@@ -36,7 +36,7 @@ def criptografar_mensagem(mensagem, chave_rsa_remetente, chave_rsa_destinatario,
     tempo_criptografia = end_time - start_time
     return (cipher_aes.iv, chave_aes_criptografada, assinatura, cipher_text), tempo_criptografia
 
-# criar a função para descriptografar a mensagem com AES e RSA
+# descriptografar a mensagem com AES e RSA
 def descriptografar_mensagem(vetor_inicializacao, chave_aes_criptografada, assinatura, texto_cifrado, chave_rsa_remetente, chave_rsa_destinatario):
     start_time = time.time()
 
